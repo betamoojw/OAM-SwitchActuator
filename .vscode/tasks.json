@@ -22,17 +22,6 @@
             "problemMatcher": []
         },
         {
-            "label": "Upload JLINK RP2040",
-            "type": "shell",
-            "command": "scripts/OpenKNX-Build.ps1",
-            "args": [
-                "upload_JLINK_RP2040",
-                "upload"
-            ],
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
             "label": "Upload USB RP2040",
             "type": "shell",
             "command": "scripts/OpenKNX-Build.ps1",
