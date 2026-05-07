@@ -123,3 +123,26 @@
     #define OPENKNX_GPIO_SDA OKNXHW_REG1_APP_SA_4xSELV_TCA_SDA
     #define OPENKNX_GPIO_SCL OKNXHW_REG1_APP_SA_4xSELV_TCA_SCL
 #endif
+
+#ifdef BOARD_MTECH_SA_W_HANDSWITCH_REG4_4CH
+    #define DEVICE_ID "MTech-SWA-With-Handswitch-4CH"
+    #define HARDWARE_NAME "MTech-SWA-With-Handswitch-4CH"
+    #define DEVICE_NAME "MTech Switch Actuator With Handswitch 4x, 4 TE"
+
+    #define PROG_LED_PIN 2
+    #define PROG_LED_PIN_ACTIVE_ON HIGH
+    #define PROG_BUTTON_PIN 7
+    #define PROG_BUTTON_PIN_INTERRUPT_ON FALLING
+
+    #define KNX_UART_NUM 0
+    #define KNX_UART_TX_PIN 0
+    #define KNX_UART_RX_PIN 1
+    #define SAVE_INTERRUPT_PIN 6
+
+    #define OPENKNX_SWA_CHANNEL_COUNT 4
+    #define OPENKNX_SWA_SET_PINS 10, 12, 14, 16
+    #define OPENKNX_SWA_RESET_PINS 11, 13, 15, 17
+    #define OPENKNX_SWA_SET_ACTIVE_ON HIGH
+    #define OPENKNX_SWA_RESET_ACTIVE_ON HIGH
+    #define OPENKNX_SWA_BISTABLE_IMPULSE_LENGTH 50
+#endif
