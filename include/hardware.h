@@ -145,4 +145,25 @@
     #define OPENKNX_SWA_SET_ACTIVE_ON HIGH
     #define OPENKNX_SWA_RESET_ACTIVE_ON HIGH
     #define OPENKNX_SWA_BISTABLE_IMPULSE_LENGTH 50
+    
+    // #define BOARD_MTECH_SA_SERIAL_RGB
+#endif
+
+#ifdef BOARD_MTECH_SA_SERIAL_RGB
+
+    #define OPENKNX_SERIALLED_ENABLE
+    #define OPENKNX_LEDCOLOR_CALIBRATION {50, 35, 63}
+
+    #define OPENKNX_SERIALLED_PIN 23
+    #define OPENKNX_SERIALLED_NUM 2
+
+    #define PROG_LED_PIN 1
+    #define PROG_LED_COLOR OpenKNX::Led::Color::Red
+    #define INFO1_LED_PIN 0
+    #define INFO1_LED_COLOR OpenKNX::Led::Color::Blue
+    #define INFO2_LED_PIN 0
+    #define INFO2_LED_COLOR OpenKNX::Led::Color::Green
+    #define INFO3_LED_PIN 0
+    #define INFO3_LED_COLOR OpenKNX::Led::Color::Red
+    #define OPENKNX_LEDEFFECT_PULSE_MIN 50
 #endif
