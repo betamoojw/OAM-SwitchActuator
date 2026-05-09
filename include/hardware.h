@@ -155,15 +155,15 @@
     #define OPENKNX_LEDCOLOR_CALIBRATION {50, 35, 63}
 
     #define OPENKNX_SERIALLED_PIN 23
-    #define OPENKNX_SERIALLED_NUM 2
+    #define OPENKNX_SERIALLED_NUM 4
 
-    #define PROG_LED_PIN 1
+    #define PROG_LED_PIN 0
     #define PROG_LED_COLOR OpenKNX::Led::Color::Red
-    #define INFO1_LED_PIN 0
+    #define INFO1_LED_PIN 1
     #define INFO1_LED_COLOR OpenKNX::Led::Color::Blue
-    #define INFO2_LED_PIN 0
+    #define INFO2_LED_PIN 2
     #define INFO2_LED_COLOR OpenKNX::Led::Color::Green
-    #define INFO3_LED_PIN 0
+    #define INFO3_LED_PIN 3
     #define INFO3_LED_COLOR OpenKNX::Led::Color::Red
     #define OPENKNX_LEDEFFECT_PULSE_MIN 50
 #endif
